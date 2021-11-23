@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='./calendar.css' rel='stylesheet'/>
+    <script src='./university.js'></script>
+</head>
+<body>
+    <table id="title">
+        <tr id="click" align="center" >
+            <td >
+                <button type="button" onclick="document.location.href='./university.html'">대학</a>
+            </td>
+            <td>
+                <button type="button" onclick="document.location.href='./calendar.html'">달력</a>
+            </td>
+        </tr>
+    </table>
+
+    <font size=4>대학 입학처 추가하기</font><br><br>
+    <label for="name">이름: </label>
+    <input type="text" id="name">
+    <label for="Element">URL: </label>
+    <input type="url" id="Element">
+    <button type="button" onclick="addDB()">
+        add
+    </button>
+    <br>
+
+    <p>추가</p>
+    <p id="addUrl"></p>
+
+    <p>ㄱ</p>
+    <a href="http://ipsi.catholic.ac.kr/main/index.asp" target="blank">가톨릭대</a>
+    <a href="https://oku.korea.ac.kr/sejong/index.do" target="blank">고려대 세종</a>
+    <a href="https://enter.konkuk.ac.kr/main.do" target="blank">건국대</a>
+    <a href="http://enter.kyonggi.ac.kr/intro.do" target="blank">경기대</a>
+    <a href="http://intro.uway.com/knu/intro.html" target="blank">경북대</a>
+    <a href="https://iphak.khu.ac.kr/main.do" target="blank">경희대</a>
+    <a href="https://iphak.kw.ac.kr/" target="blank">광운대</a>
+
+    <p>ㄷ</p>
+    <a href="https://ipsi.dankook.ac.kr/intro.html" target="blank">단국대</a>
+    <a href="https://enter.duksung.ac.kr/main.do?isMaster=N&isLogined=N&viewPrefix=%2FWEB-INF%2Fjsp%2Fcms&urlRootPath=&siteResourcePath=%2Fsite%2Fenter" target="blank">덕성여대</a>
+    <a href="https://ipsi.dongguk.edu/admission/html/main/main.asp" target="blank">동국대서울캠</a>
+    
+    <p>ㅂ</p>
+    <a href="https://go.pusan.ac.kr/intro.asp" target="blank">부산대</a>
+    
+    <p>ㅅ</p>
+    <a href="https://iphak.kw.ac.kr/" target="blank">서강대</a>
+    <a href="https://admission.seoultech.ac.kr/index.do" target="blank">서울과학기술대</a>
+    <a href="https://admission.uos.ac.kr/admission/main.do?epTicket=LOG" target="blank">서울시립대</a>
+    <a href="https://admission.swu.ac.kr/intro.html" target="blank">서울여대</a>
+    <a href="https://admission.skku.edu/main.html" target="blank">성균관대</a>
+    <a href="https://ipsi.sungshin.ac.kr/main.htm" target="blank">성신여대</a>
+    <a href="https://ipsi.sejong.ac.kr/" target="blank">세종대</a>
+    <a href="https://admission.sookmyung.ac.kr/enter/html/main/main.asp" target="blank">숙명여대</a>
+    <a href="https://iphak.ssu.ac.kr/" target="blank">숭실대</a>
+    
+    <p>ㅇ</p>
+    <a href="http://www.iajou.ac.kr/main.do" target="blank">아주대</a>
+    <a href="https://admission.yonsei.ac.kr/seoul/admission/html/main/main.asp" target="blank">연세대 서울</a>
+    <a href="https://iphak.ulsan.ac.kr/iphak/Main.do" target="blank">울산대</a>
+    <a href="http://admission.ewha.ac.kr/enter/doc/intro.asp" target="blank">이화여대</a>
+    <a href="https://admission.inha.ac.kr/intro.do" target="blank">인하대</a>
+    
+    <p>ㅈ</p>
+    <a href="http://admission.cau.ac.kr/main.htm" target="blank">중앙대</a>
+    
+    <p>ㅎ</p>
+    <a href="https://ipsi.koreatech.ac.kr/main.do" target="blank">한국기술교육대</a>
+    <a href="http://iphak.kpu.ac.kr/intro.html" target="blank">한국산업기술대</a>
+    <a href="https://adms.hufs.ac.kr/index.do" target="blank">한국외대</a>
+    <a href="https://ibhak.kau.ac.kr/admission/m/kau_iphak.asp" target="blank">한국항공대</a>
+    <a href="https://go.hanyang.ac.kr/gate.do" target="blank">한양대 서울캠</a>
+    <a href="http://goerica.hanyang.ac.kr/intro.asp" target="blank">한양대 에리카 </a>
+    <a href="https://admission.hongik.ac.kr/main" target="blank">홍익대</a>
+</body>
+</html>

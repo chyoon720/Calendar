@@ -1,0 +1,13 @@
+#title{
+    display:table;
+    border-color:gray;
+    width: 100%;
+    height: 20;
+}
+
+#click{
+    border: 1px solid gray;
+    margin: auto;
+    width: fit-content;
+    background-color: aliceblue;
+}
