@@ -53,12 +53,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 click: function(){
                     var arrevents = calendar.getEvents();
                     let addTag = document.getElementById('d-day');
+                    let dayList = new Array();
+
                     while (addTag.hasChildNodes()) {
                         addTag.removeChild(addTag.firstChild);
                     }
-                    for(var i=0; i < arrevents.length; i++){
+                    for(var i=0; i < arrevents.length; i++) {
+                        dayList.push({key: i, millisecond: arrevents[i].start.valueOf()});
+                    }
+                    dayList.sort(function (a, b) {      // 시간 순으로 정렬
+                        return a.millisecond < b.millisecond ? -1 : 1;
+                    });
+                    for (var i=0; i < dayList.length; i++) {
                         var newTag = document.createElement('p');
-                        newTag.innerHTML = arrevents[i].title + " is " + moment(arrevents[i].start).fromNow();
+                        if (dayList[i].millisecond < moment().valueOf()) {
+                            newTag.setAttribute('class', 'dday_ago');
+                        } else {
+                            newTag.setAttribute('class', 'dday_ahead');
+                        }
+                        newTag.innerHTML = arrevents[dayList[i].key].title + " is " + moment(arrevents[dayList[i].key].start).fromNow();
                         addTag.appendChild(newTag);
                     }
                     if (addTag.style.display == 'block') {
