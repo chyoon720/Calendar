@@ -17,3 +17,11 @@
     text-align: center;
     font-weight: bolder;
 }
+
+.dday_ago {
+    background-color: lightblue;
+}
+
+.dday_ahead {
+    background-color: #ff87d2;
+}
