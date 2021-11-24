@@ -1,8 +1,9 @@
 #title{
     display:table;
-    border-color:gray;
+    border-color: gray;
     width: 100%;
     height: 20;
+    
 }
 
 #click{
@@ -10,4 +11,41 @@
     margin: auto;
     width: fit-content;
     background-color: aliceblue;
+}
+
+p{
+   font-weight : bold;
+   background-color : aliceblue;
+   text-align : center;
+}
+
+.fonttable{
+   display: table;
+   font-weight : bold;
+   background-color : aliceblue;
+   text-align : center;
+   width: 100%;
+    height: 30px;
+}
+
+.fonttablerow{
+   display: table-row;
+
+}
+
+.fonttablecell{
+   display: table-cell;
+   vertical-align: middle;
+   background-color : lightgrey;
+}
+
+.tag{
+   text-align : center;
+   height: 50px;
+}
+
+font{
+   border-color:gray;
+    width: 100%;
+    height: 20;
 }
